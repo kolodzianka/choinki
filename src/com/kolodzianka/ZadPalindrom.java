@@ -2,13 +2,13 @@ package com.kolodzianka;
 
 import java.util.Stack;
 
-public class StosIKolejkiZadania {
+public class ZadPalindrom {
 
     public static void main(String[] args) {
 
 
         Stack<Character> stos = new Stack<>();
-        String slowo = "ABC";
+        String slowo = "Ala";
 
         stos.push(slowo.charAt(0));
         stos.push(slowo.charAt(1));
@@ -20,10 +20,13 @@ public class StosIKolejkiZadania {
 
         System.out.println(noweSlowo);
 
-
-
-
+        if (slowo.equalsIgnoreCase(noweSlowo)){
+            System.out.println("Jest palindromem");;
+        }else {
+            System.out.println("Nie jest palindromrm");
+        }
 
     }
+
 
 }
