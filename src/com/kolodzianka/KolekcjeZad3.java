@@ -1,6 +1,7 @@
 package com.kolodzianka;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class KolekcjeZad3 {
@@ -16,6 +17,11 @@ public class KolekcjeZad3 {
         slownik.put("siedzi", "sit");
 
         tlumacz("Kot lubi  swoj dom",slownik);
+
+        System.out.println("");
+        System.out.println("/////// Zad 4");
+
+        ileULiter("krakowianka");
 
 
 
@@ -35,6 +41,17 @@ public class KolekcjeZad3 {
                 System.out.print((s) + " ");
             }
         }
+
+    }
+
+    public static void ileULiter (String wyraz){
+
+        HashSet<Character> set = new HashSet<>();
+        for (char l: wyraz.toCharArray()){
+            set.add(l);
+        }
+
+        System.out.println(set.size());
 
     }
 
